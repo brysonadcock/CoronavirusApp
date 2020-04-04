@@ -6,13 +6,84 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="416dp"
+        android:layout_height="51dp"
+        android:background="#020202"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/title_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="4sp"
+            android:layout_marginTop="4sp"
+            android:fontFamily="@font/allerta"
+            android:text="Help with Covid-19"
+            android:textAllCaps="false"
+            android:textColor="#FF0000"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:id="@+id/menuTextView"
+        android:layout_width="296dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="24dp"
+        android:clickable="false"
+        android:fontFamily="@font/allerta"
+        android:text="Main Menu"
+        android:textColor="#000000"
+        android:textSize="36sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <Button
+        android:id="@+id/diagnoseHelpButton"
+        android:layout_width="339dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:background="#FF0000"
+        android:clickable="true"
+        android:cursorVisible="true"
+        android:fontFamily="@font/allerta"
+        android:shadowColor="#00FF0000"
+        android:text="Do I have Covid-19?"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/menuTextView" />
+
+    <Button
+        android:id="@+id/symptoms_button"
+        android:layout_width="339dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="8dp"
+        android:background="#FF0000"
+        android:clickable="true"
+        android:cursorVisible="true"
+        android:fontFamily="@font/allerta"
+        android:text="Symptoms"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/diagnoseHelpButton" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
