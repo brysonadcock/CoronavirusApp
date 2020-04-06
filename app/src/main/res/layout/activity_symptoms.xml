@@ -50,7 +50,7 @@
     <ScrollView
         android:layout_width="0dp"
         android:layout_height="604dp"
-        android:layout_marginTop="1dp"
+        android:layout_marginTop="8dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/menuHeader">
@@ -61,10 +61,20 @@
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/symptomsList"
+                android:id="@+id/signsList"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="TextView" />
+                android:fontFamily="@font/allerta"
+                android:text="Signs include:\n  •  Fever\n  •  Cough\n  •  Shortness of Breath\n"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/seekHelpView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/allerta"
+                android:text="Seek Medical Attention if you exhibit the following:\n  •  Difficulty breathing\n  •  Persistent chest or pressure\n  •  Bluish Lips of Face\n"
+                android:textSize="24sp" />
         </LinearLayout>
     </ScrollView>
 
