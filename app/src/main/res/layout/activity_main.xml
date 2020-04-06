@@ -4,12 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FFFFFF"
     tools:context=".MainActivity">
 
     <LinearLayout
         android:id="@+id/linearLayout"
-        android:layout_width="416dp"
-        android:layout_height="51dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
         android:background="#020202"
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
@@ -20,10 +21,11 @@
             android:id="@+id/title_text"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_marginStart="4sp"
             android:layout_marginLeft="4sp"
             android:layout_marginTop="4sp"
             android:fontFamily="@font/allerta"
-            android:text="Help with Covid-19"
+            android:text="@string/stay_home_stay_safe"
             android:textAllCaps="false"
             android:textColor="#FF0000"
             android:textSize="30sp"
@@ -31,13 +33,14 @@
     </LinearLayout>
 
     <TextView
-        android:id="@+id/menuTextView"
-        android:layout_width="296dp"
-        android:layout_height="63dp"
+        android:id="@+id/menuHeader"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
         android:clickable="false"
         android:fontFamily="@font/allerta"
-        android:text="Main Menu"
+        android:gravity="center|center_horizontal|center_vertical"
+        android:text="@string/main_menu"
         android:textColor="#000000"
         android:textSize="36sp"
         android:textStyle="bold|italic"
@@ -46,44 +49,106 @@
         app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
 
     <Button
-        android:id="@+id/diagnoseHelpButton"
+        android:id="@+id/diagnoseBtn"
         android:layout_width="339dp"
         android:layout_height="54dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginLeft="24dp"
         android:layout_marginTop="16dp"
-        android:layout_marginEnd="24dp"
-        android:layout_marginRight="24dp"
         android:background="#FF0000"
         android:clickable="true"
-        android:cursorVisible="true"
+        android:focusable="true"
         android:fontFamily="@font/allerta"
+        android:onClick="goToDiagnosisActivity"
         android:shadowColor="#00FF0000"
-        android:text="Do I have Covid-19?"
+        android:text="@string/do_i_have_covid_19"
         android:textAllCaps="false"
         android:textColor="#FFFFFF"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/menuTextView" />
+        app:layout_constraintTop_toBottomOf="@+id/menuHeader" />
 
     <Button
-        android:id="@+id/symptoms_button"
+        android:id="@+id/symptomsBtn"
         android:layout_width="339dp"
         android:layout_height="54dp"
         android:layout_marginTop="8dp"
         android:background="#FF0000"
         android:clickable="true"
-        android:cursorVisible="true"
+        android:focusable="true"
         android:fontFamily="@font/allerta"
-        android:text="Symptoms"
+        android:onClick="goToSymptomsActivity"
+        android:text="@string/symptoms"
         android:textAllCaps="false"
         android:textColor="#FFFFFF"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/diagnoseHelpButton" />
+        app:layout_constraintTop_toBottomOf="@+id/diagnoseBtn" />
+
+    <Button
+        android:id="@+id/cdcWebBtn"
+        android:layout_width="339dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="8dp"
+        android:background="#FF0000"
+        android:fontFamily="@font/allerta"
+        android:onClick="goToSite"
+        android:text="@string/cdc_covid_19_webpage"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.486"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/usCaseMapSiteBtn" />
+
+    <Button
+        android:id="@+id/usCaseMapSiteBtn"
+        android:layout_width="337dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="8dp"
+        android:background="#FF0000"
+        android:fontFamily="@font/allerta"
+        android:onClick="goToWebViewActivity"
+        android:text="@string/usa_case_btn"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/symptomsBtn" />
+
+    <ImageView
+        android:id="@+id/virusImage"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        android:contentDescription="@string/virus_image"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/coronavirus_cdc_square" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="337dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="8dp"
+        android:background="#FF0000"
+        android:fontFamily="@font/allerta"
+        android:onClick="goToCredits"
+        android:text="@string/credits"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cdcWebBtn" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
