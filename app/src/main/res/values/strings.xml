@@ -13,4 +13,14 @@
     <string name="usa_case_btn">USA Case Statistics (NY Times)</string>
     <string name="guidelines">Guidelines</string>
     <string name="title_label">What you need to know about Coronavirus</string>
+    <string name="do_you_have_a_persistent_fever">Do you have a persistent fever?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="do_you_have_a_sore_throat">Do you have a sore throat?</string>
+    <string name="do_you_have_a_new_cough">Do you have a new cough?</string>
+    <string name="do_you_have_shortness_of_breath">Do you have shortness of breath?</string>
+    <string name="do_you_have_new_muscle_aches">Do you have new muscle aches?</string>
+    <string name="do_you_have_sudden_loss_of_taste_or_smell">Do you have sudden loss of taste or smell?</string>
+    <string name="check_my_results">Check My Results</string>
+    <string name="default_result">Answer the questions to get suggestions</string>
 </resources>
