@@ -9,7 +9,7 @@
     <string name="credits">Credits</string>
     <string name="virus_image">Virus Image</string>
     <string name="stay_home_stay_safe">Stay Home. Stay Safe.</string>
-    <string name="credits_text">Main Developer: Bryson Adcock\n\nVirus Image:\nwww.statnews.com/2020/02/11/disease-caused-by-the-novel-coronavirus-has-name-covid-19/</string>
+    <string name="credits_text">Main Developer: Bryson Adcock\n\nVirus Image:\nwww.statnews.com/2020/02/11/disease-caused-by-the-novel-coronavirus-has-name-covid-19/\n\nUS Case Statistics from New York Times:\nwww.nytimes.com/interactive/2020/us/coronavirus-us-cases.html</string>
     <string name="usa_case_btn">USA Case Statistics (NY Times)</string>
     <string name="guidelines">Guidelines</string>
     <string name="title_label">What you need to know about Coronavirus</string>

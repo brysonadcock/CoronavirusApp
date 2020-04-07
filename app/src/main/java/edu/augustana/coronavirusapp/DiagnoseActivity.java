@@ -41,13 +41,13 @@ public class DiagnoseActivity extends AppCompatActivity {
         int totalSymptoms = fever + cough + shortBreath + muscleAche + soreThroat + senses;
         String result = "";
         if (totalSymptoms >= 5) { // High Risk
-            result = "You have a high probability of having coronavirus.  You meet exhibit almost all of the key symptoms. Contact your doctor about what steps you need to take next.";
+            result = "There is a high probability you have coronavirus.  You meet exhibit almost all of the key symptoms. Contact your doctor as soon as possible to talk about what steps you need to take next. Self-quarantine until you can talk to your doctor.";
         } else if (totalSymptoms >= 3) {
-            result = "You meet exhibit almost all of the symptoms. Contact your doctor about what steps you need to take next.";
+            result = "You meet exhibit several of the symptoms. If you are above the age of 60, immuno-compromised, or have asthma or other respiratory issues, you could be at risk.  It is advised to contact your doctor about what steps to take next. If you are not in an at risk group, self-quarantine until symptoms are gone. If your symptoms worsen, contact your doctor.";
         } else if (totalSymptoms >=1) {
-            result = "You meet exhibit almost all of the symptoms. Contact your doctor about what steps you need to take next.";
+            result = "You only show a couple of the symptoms for coronavirus. Monitor your symptoms to see if they get worse or if you develop more symptoms. Until symptoms go away, it is advised to self-quarantine to prevent potential spread to others.";
         } else {
-            result = "You meet exhibit almost all of the symptoms. Contact your doctor about what steps you need to take next.";
+            result = "You don't meet any of the symptoms of coronavirus. It is still advised you practice social distancing to continue to stay healthy.";
         }
         resultsView.setText(result);
     }
