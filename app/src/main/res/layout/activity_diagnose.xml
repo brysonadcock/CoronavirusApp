@@ -62,7 +62,7 @@
     <TextView
         android:id="@+id/resultsView"
         android:layout_width="0dp"
-        android:layout_height="151dp"
+        android:layout_height="250dp"
         android:text="Answer the questions to find the probability that you have coronavirus."
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"

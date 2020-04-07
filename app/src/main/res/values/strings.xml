@@ -23,4 +23,5 @@
     <string name="do_you_have_sudden_loss_of_taste_or_smell">Do you have sudden loss of taste or smell?</string>
     <string name="check_my_results">Check My Results</string>
     <string name="default_result">Answer the questions to get suggestions</string>
+    <string name="source_text">Information from Center for Disease Control Website\n</string>
 </resources>

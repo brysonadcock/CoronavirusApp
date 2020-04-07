@@ -89,6 +89,14 @@
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/allerta"
                     android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/sourceText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/source_text"
+                    android:textSize="18sp"
+                    android:textStyle="italic" />
             </LinearLayout>
         </ScrollView>
     </LinearLayout>

@@ -29,7 +29,22 @@
             android:textColor="#FF0000"
             android:textSize="30sp"
             android:textStyle="bold" />
+
     </LinearLayout>
+
+    <TextView
+        android:id="@+id/headerText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/allerta"
+        android:gravity="center"
+        android:text="USA Statistics and Maps"
+        android:textColor="#000000"
+        android:textSize="36sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
 
     <WebView
         android:id="@+id/webView"
@@ -38,7 +53,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+        app:layout_constraintTop_toBottomOf="@+id/headerText" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
