@@ -33,7 +33,7 @@
     </LinearLayout>
 
     <TextView
-        android:id="@+id/menuHeader"
+        android:id="@+id/pageHeader"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
@@ -66,10 +66,10 @@
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/menuHeader" />
+        app:layout_constraintTop_toBottomOf="@+id/pageHeader" />
 
     <Button
-        android:id="@+id/symptomsBtn"
+        android:id="@+id/guidelinesBtn"
         android:layout_width="339dp"
         android:layout_height="54dp"
         android:layout_marginTop="8dp"
@@ -77,8 +77,8 @@
         android:clickable="true"
         android:focusable="true"
         android:fontFamily="@font/allerta"
-        android:onClick="goToSymptomsActivity"
-        android:text="@string/symptoms"
+        android:onClick="goToGuidelinesActivity"
+        android:text="@string/guidelines"
         android:textAllCaps="false"
         android:textColor="#FFFFFF"
         android:textSize="24sp"
@@ -89,7 +89,7 @@
 
     <Button
         android:id="@+id/cdcWebBtn"
-        android:layout_width="339dp"
+        android:layout_width="337dp"
         android:layout_height="54dp"
         android:layout_marginTop="8dp"
         android:background="#FF0000"
@@ -101,7 +101,6 @@
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.486"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/usCaseMapSiteBtn" />
 
@@ -120,7 +119,7 @@
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/symptomsBtn" />
+        app:layout_constraintTop_toBottomOf="@+id/guidelinesBtn" />
 
     <ImageView
         android:id="@+id/virusImage"

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SymptomsActivity">
+    tools:context=".GuidelinesActivity">
 
     <LinearLayout
         android:id="@+id/linearLayout"
@@ -32,14 +32,14 @@
     </LinearLayout>
 
     <TextView
-        android:id="@+id/menuHeader"
+        android:id="@+id/pageHeader"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
         android:clickable="false"
         android:fontFamily="@font/allerta"
         android:gravity="center|center_vertical"
-        android:text="@string/symptoms"
+        android:text="@string/guidelines"
         android:textColor="#000000"
         android:textSize="36sp"
         android:textStyle="bold|italic"
@@ -47,36 +47,50 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
 
-    <ScrollView
+    <LinearLayout
         android:layout_width="0dp"
-        android:layout_height="604dp"
-        android:layout_marginTop="8dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/menuHeader">
+        app:layout_constraintTop_toBottomOf="@+id/pageHeader">
 
-        <LinearLayout
+
+        <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:layout_height="match_parent"
+            android:layout_marginTop="8dp"
+            android:duplicateParentState="true"
+            android:fadeScrollbars="true"
+            android:fadingEdge="vertical|none"
+            android:isScrollContainer="true"
+            android:overScrollMode="always"
+            android:scrollbars="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/pageHeader">
 
-            <TextView
-                android:id="@+id/signsList"
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/allerta"
-                android:text="Signs include:\n  •  Fever\n  •  Cough\n  •  Shortness of Breath\n"
-                android:textSize="24sp" />
+                android:layout_height="match_parent"
+                android:orientation="vertical">
 
-            <TextView
-                android:id="@+id/seekHelpView"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/allerta"
-                android:text="Seek Medical Attention if you exhibit the following:\n  •  Difficulty breathing\n  •  Persistent chest or pressure\n  •  Bluish Lips of Face\n"
-                android:textSize="24sp" />
-        </LinearLayout>
-    </ScrollView>
+                <TextView
+                    android:id="@+id/seekHelpView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/allerta"
+                    android:textSize="24sp" />
 
+                <TextView
+                    android:id="@+id/tipsToStayHealthyList"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/allerta"
+                    android:textSize="24sp" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -32,8 +32,8 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void goToSymptomsActivity(View view) {
-        Intent intent = new Intent(this, SymptomsActivity.class);
+    public void goToGuidelinesActivity(View view) {
+        Intent intent = new Intent(this, GuidelinesActivity.class);
         startActivity(intent);
     }
 
